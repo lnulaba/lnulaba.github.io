@@ -1,0 +1,110 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fefefe;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f38ca1;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+}
+
+.intro .text {
+  flex: 1 1 50%;
+}
+
+.intro .text h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.intro .text h1 span {
+  background-color: #f69ca2;
+  padding: 0 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.intro .text p {
+  margin: 1rem 0;
+  color: #666;
+  max-width: 400px;
+}
+
+.intro .text button {
+  background: #f38ca1;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.intro .socials {
+  margin-top: 1.5rem;
+}
+
+.intro .socials a {
+  color: #555;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.intro .photo {
+  flex: 1 1 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .photo .circle {
+  width: 280px;
+  height: 280px;
+  background: #f9b0bc;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+
+.intro .photo img {
+  width: 260px;
+  height: auto;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
