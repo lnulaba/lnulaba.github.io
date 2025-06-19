@@ -12,9 +12,8 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 header {
@@ -68,6 +67,9 @@ header nav ul li a:hover {
   margin-right: 1rem;
   text-decoration: none;
 }
+.intro .text .socials a:hover {
+  color: var(--primary-color);
+}
 .intro .photo {
   display: flex;
   justify-content: center;
@@ -83,4 +85,44 @@ header nav ul li a:hover {
 }
 .intro .photo img {
   z-index: 1;
+}
+
+section.skill {
+  padding: 2rem 0;
+}
+section.skill h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+section.skill .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+section.skill .skills-list .skill-item {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+section.skill .skills-list .skill-item .icon {
+  width: 100%;
+  text-align: center;
+}
+section.skill .skills-list .skill-item .icon i {
+  font-size: 6rem;
+  color: var(--background-color);
+}
+section.skill .skills-list .skill-item:hover {
+  transform: translateY(-5px);
 }/*# sourceMappingURL=style.css.map */
