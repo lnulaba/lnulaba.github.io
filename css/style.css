@@ -52,6 +52,9 @@ header .container nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
 }
+.intro .text {
+  width: 50%;
+}
 .intro .text h1 {
   font-size: 3.5em;
 }
@@ -82,17 +85,10 @@ header .container nav ul li a:hover {
   color: var(--primary-color);
 }
 .intro .photo {
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-}
-.intro .photo .circle {
-  width: 280px;
-  height: 280px;
-  background: var(--primary-color);
-  box-shadow: 0px 0px 10px 10px var(--primary-color);
-  border-radius: 50%;
-  position: absolute;
 }
 .intro .photo img {
   z-index: 1;
@@ -216,4 +212,46 @@ footer .socials a {
 }
 footer .socials a:hover {
   color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .container nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .intro .text {
+    justify-content: center;
+    width: 100%;
+  }
+  .intro .text h1 {
+    font-size: 2.5em;
+  }
+  .intro .photo {
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .intro .photo .circle {
+    width: 200px;
+    height: 200px;
+  }
+  .intro .photo img {
+    width: 180px;
+    height: auto;
+  }
+  .projects {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
