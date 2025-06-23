@@ -4,6 +4,10 @@
   --background-color: #fefefe;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: var(--background-color);
@@ -17,22 +21,29 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 20px 0px var(--primary-color);
+}
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul {
+header .container nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
-header nav ul li a {
+header .container nav ul li a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
   transition: color 0.3s;
 }
-header nav ul li a:hover {
+header .container nav ul li a:hover {
   color: var(--primary-color);
 }
 
@@ -107,8 +118,8 @@ section.skill .skills-list .skill-item {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,83 +127,76 @@ section.skill .skills-list .skill-item {
   flex-wrap: wrap;
 }
 section.skill .skills-list .skill-item .icon {
+  margin-top: 30px;
   width: 100%;
   text-align: center;
 }
 section.skill .skills-list .skill-item .icon i {
-  font-size: 6rem;
+  font-size: 4rem;
   color: var(--background-color);
 }
 section.skill .skills-list .skill-item:hover {
   transform: translateY(-5px);
-}/*# sourceMappingURL=style.css.map */
+}
 
 .about-me {
   margin-top: 30px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f38ca1;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .about-me .icon {
   font-size: 50px;
-  color: #fff;
+  color: var(--background-color);
   margin-bottom: 15px;
 }
-
 .about-me h3 {
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: bold;
 }
-
 .about-me p {
   font-size: 18px;
   line-height: 1.6;
 }
+
 .projects {
   padding: 50px 20px;
   background-color: #f9f9f9;
   text-align: center;
 }
-
 .projects h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #333;
+  color: var(--text-color);
 }
-
-.project-list {
+.projects .project-list {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
-.project-item {
+.projects .project-list .project-item {
   width: 300px;
-  background-color: #fff;
+  background-color: var(--background-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: left;
 }
-
-.project-item img {
+.projects .project-list .project-item img {
   width: 100%;
   height: auto;
 }
-
-.project-item h3 {
+.projects .project-list .project-item h3 {
   font-size: 24px;
   margin: 15px;
-  color: #f38ca1;
+  color: var(--primary-color);
 }
-
-.project-item p {
+.projects .project-list .project-item p {
   font-size: 16px;
   margin: 15px;
   color: #666;
@@ -204,14 +208,12 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
 footer .socials a {
   margin: 0 5px;
   color: #666;
   font-size: 16px;
   transition: color 0.3s ease;
 }
-
 footer .socials a:hover {
-  color: #f38ca1;
-}
+  color: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
