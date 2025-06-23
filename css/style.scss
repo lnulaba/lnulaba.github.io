@@ -1,5 +1,6 @@
 :root {
     --primary-color: #f38ca1;
+    --shadow-color: #f38ca17b;
     --text-color: #333;
     --background-color: #fefefe;
 }
@@ -13,6 +14,7 @@ body {
     background: var(--background-color);
     margin: 0;
     padding: 0;
+    text-shadow: 0px 1px 3px var(--shadow-color);
 }
 
 .container {
@@ -122,6 +124,7 @@ header {
             // border-radius: 15px;
             // object-fit: cover;
             z-index: 1;
+            filter: drop-shadow(0.5em 0rem 0.25rem var(--primary-color));
             // position: relative;
         }
     }
